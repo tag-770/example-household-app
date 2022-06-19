@@ -12,7 +12,7 @@
     </header>
     <main>
         <div>
-            <form action="" method="post">
+            <form action="{{ route('register') }}" method="post">
                 @csrf
                 <label for="username">ユーザー名</label>
                 <input type="text" name="username" id="username">
