@@ -13,9 +13,9 @@
     <main>
         <form action="" method="post">
             @csrf
-            <label for="email"></label>
+            <label for="email">メールアドレス</label>
             <input type="email" name="email" id="email">
-            <label for="password"></label>
+            <label for="password">パスワード</label>
             <input type="password" name="password" id="password">
             <button type="submit">送信する</button>
         </form>
