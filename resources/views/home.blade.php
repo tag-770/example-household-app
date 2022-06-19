@@ -13,6 +13,9 @@
     <main>
         <div>
             <p>(参考用)家計簿アプリです。</p>
+            <ul>
+                <li><a href="{{ route('logout') }}">ログアウト</a></li>
+            </ul>
         </div>
     </main>
     <footer></footer>
