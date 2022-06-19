@@ -18,6 +18,13 @@ class LoginController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required']
         ]);
-        return redirect()->route('home');
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+
+            return redirect()->route('home');
+        }
+
+        dd('ログイン失敗だよ');
     }
 }
