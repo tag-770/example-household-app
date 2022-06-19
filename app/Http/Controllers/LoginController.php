@@ -25,6 +25,6 @@ class LoginController extends Controller
             return redirect()->route('home');
         }
 
-        dd('ログイン失敗だよ');
+        return redirect()->back();
     }
 }
