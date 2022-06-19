@@ -13,6 +13,9 @@
     <main>
         <div>
             <p>(参考用)家計簿アプリへようこそ</p>
+            <ul>
+                <li><a href="{{ route('register') }}">会員登録</a></li>
+            </ul>
         </div>
     </main>
     <footer></footer>
