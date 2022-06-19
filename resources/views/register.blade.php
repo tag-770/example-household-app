@@ -13,6 +13,7 @@
     <main>
         <div>
             <form action="" method="post">
+                @csrf
                 <label for="username">ユーザー名</label>
                 <input type="text" name="username" id="username">
                 <label for="email">メールアドレス</label>
