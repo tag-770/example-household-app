@@ -10,4 +10,9 @@ class RegisterController extends Controller
     {
         return view('register');
     }
+
+    public function store()
+    {
+        return redirect()->route('home');
+    }
 }
