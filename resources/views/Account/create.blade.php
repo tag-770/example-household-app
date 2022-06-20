@@ -7,7 +7,9 @@
     <title>家計簿作成 | (参考用)家計簿アプリ</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1>家計簿を登録する</h1>
+    </header>
     <main>
         <form action="" method="post">
             <label for="title">タイトル</label>
