@@ -30,5 +30,5 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/account/create', function () {
     return view('account.create');
-});
+})->name('account.create');
 Route::post('/account/create', [AccountController::class, 'create']);

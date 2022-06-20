@@ -11,7 +11,7 @@
         <h1>家計簿を登録する</h1>
     </header>
     <main>
-        <form action="" method="post">
+        <form action="{{ route('account.create') }}" method="post">
             @csrf
             <label for="title">タイトル</label>
             <input type="text" name="title" id="title">
