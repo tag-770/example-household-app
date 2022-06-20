@@ -28,7 +28,5 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
-Route::get('/account/create', function () {
-    return view('account.create');
-})->name('account.create');
+Route::get('/account/create', [AccountController::class, 'index'])->name('account.create');
 Route::post('/account/create', [AccountController::class, 'create']);
