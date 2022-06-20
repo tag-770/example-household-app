@@ -12,6 +12,7 @@
     </header>
     <main>
         <form action="" method="post">
+            @csrf
             <label for="title">タイトル</label>
             <input type="text" name="title" id="title">
             <label for="amount">金額</label>
