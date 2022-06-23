@@ -11,16 +11,23 @@
         <h1>家計簿を登録する</h1>
     </header>
     <main>
-        <form action="{{ route('account.create') }}" method="post">
-            @csrf
-            <label for="title">タイトル</label>
-            <input type="text" name="title" id="title">
-            <label for="amount">金額</label>
-            <input type="number" name="amount" id="amount">
-            <label for="memo">メモ</label>
-            <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
-            <button type="submit">送信する</button>
-        </form>
+        <div>
+            @if ($errors->any()) @foreach ($errors->all() as $error)
+            <div>
+                <p>{{ $error }}</p>
+            </div>
+            @endforeach @endif
+            <form action="{{ route('account.create') }}" method="post">
+                @csrf
+                <label for="title">タイトル</label>
+                <input type="text" name="title" id="title">
+                <label for="amount">金額</label>
+                <input type="number" name="amount" id="amount">
+                <label for="memo">メモ</label>
+                <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+                <button type="submit">送信する</button>
+            </form>
+        </div>
     </main>
     <footer></footer>
 </body>
